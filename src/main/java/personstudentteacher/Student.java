@@ -1,7 +1,7 @@
 package personstudentteacher;
 
 public class Student extends Person implements ILearner {
-    double totalStudyTime;
+   private double totalStudyTime;
 
     public Student(long id, String name){
         super(id, name);

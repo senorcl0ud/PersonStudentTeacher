@@ -6,11 +6,11 @@ public class Instructor extends Person implements ITeacher {
         super(id, name);
     }
 
-    public void teach(Learner learner, double numOfHours){
+    public void teach(ILearner learner, double numOfHours){
         learner.learn(numOfHours);
 
     }
-    public void lecture(Learner [] learners, double numOfHours){
+    public void lecture(ILearner [] learners, double numOfHours){
 
         double numberOfHoursPerLearner = numOfHours / learners.length;
 

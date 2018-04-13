@@ -11,8 +11,28 @@ public class People {
     }
 
     public Person findyById(long id){
-       return personList.
+        Person personElement = null;
+       for(Person person : personList) {
+           if (id == person.getId()) {
+               personElement = person;
+           }
+       }
+       return personElement;
     }
 
+    public void remove(Person person){
+        personList.remove(person);
+    }
 
+    public void removeById(long id){
+        for(Person person : personList) {
+            if (id == person.getId()) {
+                personList.remove(person);
+            }
+        }
+    }
+
+    public int getCount(){
+        return personList.size();
+    }
 }

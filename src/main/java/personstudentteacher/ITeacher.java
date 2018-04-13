@@ -1,7 +1,7 @@
 package personstudentteacher;
 
 public interface ITeacher {
-    void teach(Learner learner, double numOfHours);
-    void lecture(Learner [] learners, double numOfHours);
+    void teach(ILearner learner, double numOfHours);
+    void lecture(ILearner [] learners, double numOfHours);
 
 }
