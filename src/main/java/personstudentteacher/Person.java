@@ -1,14 +1,14 @@
 package personstudentteacher;
 
 public class Person {
-    private final long id;
+    private final long ID;
     private String name;
 
 
 
 
-    public Person (long id, String name) {
-        this.id = id;
+    public Person (long ID, String name) {
+        this.id = ID;
         this.name = name;
     }
 
